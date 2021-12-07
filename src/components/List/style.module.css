@@ -1,0 +1,41 @@
+.list {
+    padding: 1rem;
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.wrapperDelete, .wrapperEdit {
+    float: right;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.wrapperDelete{
+    margin-right: 20px;
+}
+
+.input {
+    outline: none;
+    font-family: inherit;
+    color: inherit;
+    border-radius: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-bottom: 2px solid transparent;
+    width: 60%;
+    display: inline;
+}
+.active{
+    border-bottom: 2px solid #ad1414;
+}
+
+
+@media screen and (max-width: 375px) {
+    .input {
+        width: 55%;
+    }
+    .wrapperDelete span, .wrapperEdit span {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,54 @@
+
+.list{
+    display: inline-block;
+    cursor: pointer;
+    width: 81%;
+    background: #FFFFFF;
+    padding: 15px 10px;
+    border-radius: 10px;
+    transition: all .2s;
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+
+}
+.list:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+.list:active {
+    transform: translateY(0) scale(1);
+}
+.list:not(:last-child) {
+    margin-bottom: 1rem;
+}
+.date{
+    font-size: 0.9rem;
+}
+
+.iconGarbeg{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transform: translateY(7px);
+    color: red;
+    transition: all 0.2s;
+}
+
+.iconGarbeg:hover {
+    color: black;
+    transform: translateY(5px) scale(1.05);
+}
+.iconGarbeg:active {
+    color: black;
+    transform: translateY(8px) scale(1);
+}
+
+@media screen and (max-width: 375px) {
+    .iconGarbeg {
+        width: 27px;
+        height: 28px;
+    }
+    .list {
+        width: 80%;
+    }
+}
